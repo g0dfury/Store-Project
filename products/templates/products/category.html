@@ -1,0 +1,14 @@
+{% extends "products/base.html" %}
+
+{% block content %}
+    <div class="product-container">
+        <h2>Товары в выбранной категории</h2>
+        {% for p in products %}
+            <p><strong>Товар:</strong> {{ p.name }}</p>
+            <p><strong>Цена:</strong> {{ p.price }} KZT</p>
+            <p><strong>Описание:</strong> {{ p.description }}</p>
+            <br>
+        {% endfor %}
+    </div>
+
+{% endblock %}

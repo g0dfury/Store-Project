@@ -1,0 +1,25 @@
+{% extends "products/base.html" %}
+
+
+
+{% block content %}
+    <div class="product-list">
+        {% for p in products %}
+            <div class="product-card">
+                <p class="product-id">ID: {{ p.id }}</p>
+                <p class="product-name">Название: {{ p.name }}</p>
+                <p class="product-category">Категория: {{ p.category.name }}</p>
+                <p class="product-price">Цена: {{ p.price }} KZT</p>
+                <p class="price-category">Категория цены: 
+                    {% if p.price < 60000 %}
+                        <span class="affordable">Доступная</span>
+                    {% elif 60000 <= p.price and p.price <= 100000 %}
+                        <span class="average">Средняя</span>
+                    {% else %}
+                        <span class="expensive">Дорогая</span>
+                    {% endif %}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,110 @@
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3498db ;
+}
+
+.title {
+    color: #fff;
+}
+
+.btns {
+    margin-right: 25px;
+}
+
+h1 {
+    margin-left: 25px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ececec;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-category {
+    font-style: italic;
+}
+
+.product-price {
+    font-size: 18px;
+}
+
+.price-category .affordable {
+    color: green;
+}
+
+.price-category .average {
+    color: orange;
+}
+
+.price-category .expensive {
+    color: red;
+}
+
+.product-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-details .price {
+    font-size: 18px;
+}
+
+.product-details .category {
+    font-style: italic;
+}
+
+.product-details .description {
+    margin-top: 10px;
+}
+
+/* Стили для контейнера с товарами */
+.product-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Стили для заголовка */
+.product-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стили для описания товара */
+.product-container p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Стили для жирного текста */
+.product-container p strong {
+    font-weight: bold;
+}
+
