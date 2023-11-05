@@ -3,4 +3,4 @@
 <p> 1.products/ -> info about all products </p>
 <p> 2.products/<int:product_id>/ -> info about selected product by its id number</p>
 <p> 3.products/category/<int:category_id>/ -> info about list of products from the selected category (by id)</p> 
-
+<p> 4.add_product/ -> to include new product into generous list </p>
